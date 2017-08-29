@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fixture 1`] = `
+Object {
+  "dir": "/Users/jkyle/Projects/pyarn-query/fixture",
+  "files": Object {
+    "readme": Array [
+      Object {
+        "fileContents": "# Hello, World!
+",
+        "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/README.md",
+      },
+    ],
+    "releases": Array [
+      Object {
+        "fileContents": "# Introducing: Fixture
+
+> Woah, omg!
+",
+        "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/releases/introducing-fixture.md",
+      },
+      Object {
+        "fileContents": "# Launching 1.0
+
+> Yay! We did it!
+",
+        "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/releases/launching-1.0.md",
+      },
+    ],
+  },
+  "pkg": Object {
+    "name": "fixture",
+    "pworkspaces": Array [
+      "packages/*",
+    ],
+    "version": "1.0.0",
+  },
+  "pkgPath": "/Users/jkyle/Projects/pyarn-query/fixture/package.json",
+  "workspaces": Array [
+    Object {
+      "dir": "/Users/jkyle/Projects/pyarn-query/fixture/packages/bar",
+      "files": Object {
+        "docs": Array [
+          Object {
+            "fileContents": "# Introduction
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/bar/docs/intro.md",
+          },
+        ],
+        "examples": Array [
+          Object {
+            "fileContents": "import bar from 'bar';
+
+bar();
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/bar/examples/basic.js",
+          },
+        ],
+        "readme": Array [
+          Object {
+            "fileContents": "# Bar
+
+> Does bar stuff
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/bar/README.md",
+          },
+        ],
+      },
+      "pkg": Object {
+        "name": "bar",
+        "version": "1.0.0",
+      },
+      "pkgPath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/bar/package.json",
+    },
+    Object {
+      "dir": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo",
+      "files": Object {
+        "docs": Array [
+          Object {
+            "fileContents": "# Advanced: Multiple
+
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo/docs/advanced/multiple.md",
+          },
+          Object {
+            "fileContents": "# Introduction
+
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo/docs/intro.md",
+          },
+        ],
+        "examples": Array [
+          Object {
+            "fileContents": "import foo from 'foo';
+
+foo();
+foo();
+foo();
+foo();
+foo();
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo/examples/advanced.js",
+          },
+          Object {
+            "fileContents": "import foo from 'foo';
+
+foo();
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo/examples/basic.js",
+          },
+        ],
+        "readme": Array [
+          Object {
+            "fileContents": "# Foo
+
+> Does foo stuff
+",
+            "filePath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo/README.md",
+          },
+        ],
+      },
+      "pkg": Object {
+        "name": "foo",
+        "version": "1.0.0",
+      },
+      "pkgPath": "/Users/jkyle/Projects/pyarn-query/fixture/packages/foo/package.json",
+    },
+  ],
+}
+`;

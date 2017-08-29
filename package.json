@@ -1,0 +1,25 @@
+{
+  "name": "pyarn-query",
+  "version": "0.0.0",
+  "description": "Query info and files from your pyarn project",
+  "main": "index.js",
+  "repository": "https://github.com/pyarn/pyarn-query",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "globby": "^6.1.0",
+    "parse-json": "^3.0.0",
+    "pyarn": "^0.6.0",
+    "typeable-promisify": "^2.0.1"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.53.1",
+    "jest": "^20.0.4"
+  }
+}
