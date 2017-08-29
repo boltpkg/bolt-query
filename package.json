@@ -1,6 +1,6 @@
 {
   "name": "pyarn-query",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Query info and files from your pyarn project",
   "main": "index.js",
   "repository": "https://github.com/pyarn/pyarn-query",
