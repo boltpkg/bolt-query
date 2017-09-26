@@ -63,7 +63,8 @@ async function query(options /*: Options */ = {}) {
 
   let dir = opts.cwd; // TODO: bolt lookup root
   let pkg = await getPackage(dir, opts.projectFiles);
-  let pkgDirs = await bolt.getWorkspaces({ cwd: dir });
+  let pkgs = await bolt.getWorkspaces({ cwd: dir });
+  let pkgDirs = pkgs.map(pkg => pkg.dir);
   let promises = [];
 
   for (let pkgDir of pkgDirs) {
