@@ -1,6 +1,6 @@
 {
   "name": "bolt-query",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Query info and files from your Bolt project",
   "main": "index.js",
   "repository": "https://github.com/bolt/bolt-query",
