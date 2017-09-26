@@ -1,6 +1,6 @@
-# pyarn-query
+# bolt-query
 
-> Query info and files from your pyarn project
+> Query info and files from your Bolt project
 
 ```js
 let results = await query({

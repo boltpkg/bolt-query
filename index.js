@@ -1,7 +1,7 @@
 // @flow
 'use strict';
 
-const pyarn = require('pyarn');
+const bolt = require('bolt');
 const path = require('path');
 const fs = require('fs');
 const globby = require('globby');
@@ -61,9 +61,9 @@ async function query(options /*: Options */ = {}) {
     workspaceFiles: {},
   }, options);
 
-  let dir = opts.cwd; // TODO: pyarn lookup root
+  let dir = opts.cwd; // TODO: bolt lookup root
   let pkg = await getPackage(dir, opts.projectFiles);
-  let pkgDirs = await pyarn.getPackages({ cwd: dir });
+  let pkgDirs = await bolt.getPackages({ cwd: dir });
   let promises = [];
 
   for (let pkgDir of pkgDirs) {

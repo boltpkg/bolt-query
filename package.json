@@ -1,9 +1,9 @@
 {
-  "name": "pyarn-query",
+  "name": "bolt-query",
   "version": "1.0.0",
-  "description": "Query info and files from your pyarn project",
+  "description": "Query info and files from your Bolt project",
   "main": "index.js",
-  "repository": "https://github.com/pyarn/pyarn-query",
+  "repository": "https://github.com/bolt/bolt-query",
   "author": "James Kyle <me@thejameskyle.com>",
   "license": "MIT",
   "files": [
@@ -15,7 +15,7 @@
   "dependencies": {
     "globby": "^6.1.0",
     "parse-json": "^3.0.0",
-    "pyarn": "^0.6.0",
+    "bolt": "^0.12.0",
     "typeable-promisify": "^2.0.1"
   },
   "devDependencies": {

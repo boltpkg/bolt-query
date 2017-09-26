@@ -6,8 +6,8 @@ const query = require('./');
 
 const fixturePath = path.join(__dirname, 'fixture');
 
-test('fixture', async () => {
-  let results = await query({
+test('fixture', () => {
+  return query({
     cwd: fixturePath,
     projectFiles: {
       readme: 'README.md',
@@ -18,9 +18,7 @@ test('fixture', async () => {
       docs: 'docs/**/*.md',
       examples: 'examples/**/*.js',
     },
+  }).then(results => {
+    expect(results).toMatchSnapshot();
   });
-
-  expect(results).toMatchSnapshot();
 });
-
-
