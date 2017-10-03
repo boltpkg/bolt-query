@@ -99,3 +99,103 @@ exports[`fixture 1`] = `
   ]
 }"
 `;
+
+exports[`fixture from nested folder 1`] = `
+"{
+  \\"dir\\": \\"/../bolt-query/fixture\\",
+  \\"pkgPath\\": \\"/../bolt-query/fixture/package.json\\",
+  \\"pkg\\": {
+    \\"name\\": \\"fixture\\",
+    \\"version\\": \\"1.0.0\\",
+    \\"bolt\\": {
+      \\"workspaces\\": [
+        \\"packages/*\\"
+      ]
+    }
+  },
+  \\"files\\": {
+    \\"readme\\": [
+      {
+        \\"filePath\\": \\"/../bolt-query/fixture/README.md\\",
+        \\"fileContents\\": \\"# Hello, World!\\\\n\\"
+      }
+    ],
+    \\"releases\\": [
+      {
+        \\"filePath\\": \\"/../bolt-query/fixture/releases/introducing-fixture.md\\",
+        \\"fileContents\\": \\"# Introducing: Fixture\\\\n\\\\n> Woah, omg!\\\\n\\"
+      },
+      {
+        \\"filePath\\": \\"/../bolt-query/fixture/releases/launching-1.0.md\\",
+        \\"fileContents\\": \\"# Launching 1.0\\\\n\\\\n> Yay! We did it!\\\\n\\"
+      }
+    ]
+  },
+  \\"workspaces\\": [
+    {
+      \\"dir\\": \\"/../bolt-query/fixture/packages/bar\\",
+      \\"pkgPath\\": \\"/../bolt-query/fixture/packages/bar/package.json\\",
+      \\"pkg\\": {
+        \\"name\\": \\"bar\\",
+        \\"version\\": \\"1.0.0\\"
+      },
+      \\"files\\": {
+        \\"readme\\": [
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/bar/README.md\\",
+            \\"fileContents\\": \\"# Bar\\\\n\\\\n> Does bar stuff\\\\n\\"
+          }
+        ],
+        \\"docs\\": [
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/bar/docs/intro.md\\",
+            \\"fileContents\\": \\"# Introduction\\\\n\\"
+          }
+        ],
+        \\"examples\\": [
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/bar/examples/basic.js\\",
+            \\"fileContents\\": \\"import bar from 'bar';\\\\n\\\\nbar();\\\\n\\"
+          }
+        ]
+      }
+    },
+    {
+      \\"dir\\": \\"/../bolt-query/fixture/packages/foo\\",
+      \\"pkgPath\\": \\"/../bolt-query/fixture/packages/foo/package.json\\",
+      \\"pkg\\": {
+        \\"name\\": \\"foo\\",
+        \\"version\\": \\"1.0.0\\"
+      },
+      \\"files\\": {
+        \\"readme\\": [
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/foo/README.md\\",
+            \\"fileContents\\": \\"# Foo\\\\n\\\\n> Does foo stuff\\\\n\\"
+          }
+        ],
+        \\"docs\\": [
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/foo/docs/advanced/multiple.md\\",
+            \\"fileContents\\": \\"# Advanced: Multiple\\\\n\\\\n\\"
+          },
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/foo/docs/intro.md\\",
+            \\"fileContents\\": \\"# Introduction\\\\n\\\\n\\"
+          }
+        ],
+        \\"examples\\": [
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/foo/examples/advanced.js\\",
+            \\"fileContents\\": \\"import foo from 'foo';\\\\n\\\\nfoo();\\\\nfoo();\\\\nfoo();\\\\nfoo();\\\\nfoo();\\\\n\\"
+          },
+          {
+            \\"filePath\\": \\"/../bolt-query/fixture/packages/foo/examples/basic.js\\",
+            \\"fileContents\\": \\"import foo from 'foo';\\\\n\\\\nfoo();\\\\n\\"
+          }
+        ]
+      }
+    }
+  ]
+}"
+`;

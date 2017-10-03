@@ -311,9 +311,9 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bolt@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/bolt/-/bolt-0.12.0.tgz#e8a2c4f9654ecb6638838b95710eff5d0f5018bf"
+bolt@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/bolt/-/bolt-0.13.0.tgz#8540507f3cf947e28db10be4960e0e247e62c2db"
   dependencies:
     array-includes "^3.0.3"
     babel-runtime "^6.25.0"
