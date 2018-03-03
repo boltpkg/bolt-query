@@ -83,10 +83,10 @@ result:
 ## Usage:
 
 ```js
-await query({ options })
+query({ options })
 ```
 
-Returns a promise with the information fetched using query
+=> Returns a promise with the information fetched using query
 
 ### options
 
