@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "bolt": "^0.13.0",
+    "bolt": "^0.19.3",
     "globby": "^6.1.0",
     "parse-json": "^3.0.0",
     "typeable-promisify": "^2.0.1"

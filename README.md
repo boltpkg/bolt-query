@@ -2,20 +2,33 @@
 
 > Query info and files from your Bolt project
 
-```js
-let results = await query({
-  cwd: fixturePath,
-  projectFiles: {
-    readme: 'README.md',
-    releases: 'releases/**/*.md',
-  },
-  workspaceFiles: {
-    readme: 'README.md',
-    docs: 'docs/**/*.md',
-    examples: 'examples/**/*.js',
-  },
-});
+## Install
+
+```sh
+$ yarn add bolt-query
 ```
+
+## Example
+
+```js
+  const query = require('bolt-query');
+
+  query({
+    projectFiles: {
+      readme: 'README.md',
+      releases: 'releases/**/*.md'
+    },
+    workspaceFiles: {
+      readme: 'README.md',
+      docs: 'docs/**/*.md',
+      examples: 'examples/**/*.js'
+    }
+  }).then(result => {
+    // result from the query
+  })
+```
+
+result:
 
 ```js
 {
@@ -66,3 +79,31 @@ let results = await query({
   }]
 }
 ```
+
+## Usage:
+
+```js
+await query({ options })
+```
+
+Returns a promise with the information fetched using query
+
+### options
+
+- **cwd**: directory path to the project ( default : `process.cwd()`)
+
+- **projectFiles**: Object describing the projet files. It accepts the file path as glob, and path are relative to project cwd option. example:
+  ```
+    {
+      readme: <pathToReadme>,
+      releases: '<pathToReleaseFiles>,
+    }
+  ```
+- **workspaceFiles**: Object describing the files in workspace. It accepts the file path as glob, paths are relative to workspace root. example:
+  ```
+    {
+      readme: <pathToReadme>,
+      docs: <pathToDocs>,
+      examples: <pathToExamples>,
+    }
+  ```
